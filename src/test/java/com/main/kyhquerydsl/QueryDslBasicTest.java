@@ -128,10 +128,10 @@ public class QueryDslBasicTest {
         List<Member> fetch = queryFactory.
                 selectFrom(member)
                 .fetch();
-
-        Member fetchOne = queryFactory.
-                selectFrom(member)
-                .fetchOne();
+//
+//        Member fetchOne = queryFactory.
+//                selectFrom(member)
+//                .fetchOne();
 
         Member fetchFirst = queryFactory
                 .selectFrom(member)
