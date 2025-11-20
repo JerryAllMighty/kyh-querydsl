@@ -11,8 +11,20 @@ public class MemberTeamDto {
     private Long teamId;
     private String teamName;
 
+    protected MemberTeamDto(){
+
+    }
+
+//    @QueryProjection
+//    public MemberTeamDto(Long memberId) {
+//        this.memberId = memberId;
+//    }
     @QueryProjection
-    public MemberTeamDto(Long memberId) {
+    public MemberTeamDto(Long memberId, String username, int age, Long teamId, String teamName) {
         this.memberId = memberId;
+        this.username = username;
+        this.age = age;
+        this.teamId = teamId;
+        this.teamName = teamName;
     }
 }
